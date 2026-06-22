@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chelix - Inicio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">CHELIX</div>
+        <ul class="nav-links">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Series</a></li>
+            <li><a href="#">Películas</a></li>
+            <li><a href="#">Mi Lista</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Héroe de Aleación</h1>
+            <p>Un genio millonario construye un traje invencible para salvar al mundo. ¿Estará listo para el desafío?</p>
+            <button class="btn btn-primary" onclick="goToMovie('metal')">▶ Reproducir</button>
+            <button class="btn btn-secondary">Más información</button>
+        </div>
+    </header>
+
+    <section class="carousel-section">
+        <h2>Tendencias Ahora</h2>
+        <div class="carousel-container">
+            <div class="carousel-track" id="track">
+                <div class="movie-card" onclick="goToMovie('ogro')">
+                    <div class="poster poster-ogro">
+                        <h3>El Ogro Verde</h3>
+                    </div>
+                </div>
+                <div class="movie-card" onclick="goToMovie('bestia')">
+                    <div class="poster poster-bestia">
+                        <h3>La Rosa y la Bestia</h3>
+                    </div>
+                </div>
+                <div class="movie-card" onclick="goToMovie('metal')">
+                    <div class="poster poster-metal">
+                        <h3>Héroe de Aleación</h3>
+                    </div>
+                </div>
+                <div class="movie-card" onclick="goToMovie('caballo')">
+                    <div class="poster poster-caballo">
+                        <h3>Caballo Libre</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
